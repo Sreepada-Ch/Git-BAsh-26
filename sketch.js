@@ -15,6 +15,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
+    car=new Ground();
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
@@ -61,4 +62,6 @@ function draw(){
 
     bird.display();
     platform.display();
+
+    car.display();
 }
